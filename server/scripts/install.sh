@@ -1,7 +1,7 @@
-#! /bin/sh
+#!/bin/sh
 
 # Variables
-BASE_DIR = ..
+BASE_DIR=..
 
 # Make sure only root can run our script
 if [ "$(id -u)" != "0" ]; then
