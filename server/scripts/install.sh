@@ -9,7 +9,7 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 
-cp $BASE_DIR/conf/rhosscontrol.conf /etc/apache2/rhosscontrol.conf
+cp $BASE_DIR/conf/rhosscontrol.conf /etc/apache2/conf.d/rhosscontrol.conf
 cp -r $BASE_DIR/rhosscontrol /var/www/
 
 /etc/init.d/apache2 restart
